@@ -3,6 +3,7 @@ dotenv.config(); // must be executed before any other imports
 
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
+
 import { AppModule } from './app.module';
 import appConfig from './config/app.config';
 

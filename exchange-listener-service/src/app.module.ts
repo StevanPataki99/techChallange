@@ -7,7 +7,6 @@ import { load } from './config/configuration';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      ignoreEnvFile: true,
       load,
     }),
   ],
