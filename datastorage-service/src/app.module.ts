@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 import { load } from './config/configuration';
+import { DatabaseModule } from './database/database.module';
 
 @Module({
   imports: [
@@ -9,6 +10,7 @@ import { load } from './config/configuration';
       isGlobal: true,
       load,
     }),
+    DatabaseModule,
   ],
   controllers: [],
   providers: [],
